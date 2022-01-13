@@ -21,7 +21,7 @@ local parseMessage = ported.parseMessage
 local callbackType = enums.interactionCallbackType
 local channelType = discordia.enums.channelType
 
-local Interaction, get = class("Interaction", Snowflake)
+local Interaction, get = class("DInteraction", Snowflake)
 
 function Interaction:__init(data, parent)
   Snowflake.__init(self, data, parent)
