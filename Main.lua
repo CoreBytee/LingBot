@@ -56,6 +56,7 @@ Client:on("messageCreate", function (Message)
     local ReturnedBlocks = ""
     local Content = string.lower(Message.content)
     local Correct = 0
+    local Good = 0
 
     for I = 1, #Content do
         
@@ -63,10 +64,11 @@ Client:on("messageCreate", function (Message)
             ReturnedBlocks = ReturnedBlocks .. Blocks.Purple
         elseif Part(Game.Word, I) == Part(Content, I) then
             ReturnedBlocks = ReturnedBlocks .. Blocks.Green
+            Good = Good + 1
             Correct = Correct + 1
         elseif string.find(Game.Word, Part(Content, I)) then
             ReturnedBlocks = ReturnedBlocks .. Blocks.Orange
-            Correct = Correct + 1
+            Good = Good + 1
         else
             ReturnedBlocks = ReturnedBlocks .. Blocks.Red
         end
@@ -86,7 +88,7 @@ Client:on("messageCreate", function (Message)
     elseif Correct == 0 then
         Addon = "Thats not fully correct"
     else
-        Addon = "Thats not quite right! (" .. Correct .. "/" .. #Game.Word .. ")"
+        Addon = "Thats not quite right! (" .. Good .. "/" .. #Game.Word .. ")"
     end
 
     Message:reply(

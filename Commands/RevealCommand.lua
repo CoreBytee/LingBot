@@ -2,6 +2,7 @@ local RevealCommand = Slash.new("reveal", "Reveal the word", function (Interacti
     
     Interaction:reply("The word is ||" .. Game.Word .. "||\nSharing this word may get you demoted! :eyes:", true)
 end)
+RevealCommand:disableForEveryone(false)
 
 local Permission = Slash.permission(Config.Admin, true, Slash.enums.applicationCommandPermissionType.role)
 
@@ -10,3 +11,4 @@ local Command = Guild:slashCommand(
 )
 
 Command:addPermission(Permission)
+Command:edit()

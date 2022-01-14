@@ -1,11 +1,9 @@
 return {
-    Guild = "783625199702245436",
-    Channel = "783731240138047529",
-    Admin = "783627612039282688",
+    Guild = "806963221469724723",
+    Channel = "931475048051658762",
+    Admin = "806964002000863282",
 
     Token = require("./Token"),
 
-    Words = {
-        "test"
-    }
+    Words = require("./Words/Loader.lua")()
 }
