@@ -1,9 +1,1 @@
-Token.lua
-discordia.log
-gateway.json
-Token.lua
-.DS_STORE
-./bin/*
-bin/lit
-bin/luvi
-bin/luvit
+Config.json
