@@ -29,6 +29,6 @@
 		}
 	],
 	"Entrypoints": {
-		"Main": "me.corebyte.LingBot"
+		"Main": "me.corebyte.LingBot.AsyncWrap"
 	}
 }
