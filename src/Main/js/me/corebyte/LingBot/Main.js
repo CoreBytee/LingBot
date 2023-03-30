@@ -13,7 +13,8 @@ module.exports = async function() {
         ),
         REST: new DiscordJs.REST({ version: "10" }),
         Commands: [
-            Import("me.corebyte.LingBot.Commands.PingCommand")
+            Import("me.corebyte.LingBot.Commands.PingCommand"),
+            Import("me.corebyte.LingBot.Commands.RevealCommand"),
         ],
         Emojis: {
             Blocks: {
