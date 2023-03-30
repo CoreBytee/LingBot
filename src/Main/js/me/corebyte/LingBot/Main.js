@@ -5,7 +5,7 @@ module.exports = async function() {
     
     globalThis.LingBot = {
         Words: Import("me.corebyte.LingBot.Words"),
-        Config: FS.readJSONSync("config.json"),
+        Config: FS.readJSONSync("./Config.json"),
         Client: new DiscordJs.Client(
             {
                 intents: [3276799],
