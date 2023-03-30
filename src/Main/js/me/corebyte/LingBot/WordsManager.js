@@ -19,6 +19,7 @@ function Emojify(Word, Input="") {
             OutputEmoji = LingBot.Emojis.Blocks.Red
         }
 
+        CharacterIndex++
         Output += OutputEmoji
     }
 
@@ -34,7 +35,6 @@ WordsManager.LoadHandles = async function() {
             if (Message.author.bot) return
             if (Message.content.includes(" ")) return
             if (Message.content.includes("\n")) return
-            console.log(Message.content)
             await Self.HandleInput(Message)
         }
     )
