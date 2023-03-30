@@ -9,6 +9,6 @@ module.exports = {
             Interaction.reply({content: 'https://tenor.com/view/rickroll-roll-rick-never-gonna-give-you-up-never-gonna-gif-22954713', ephemeral: true});
             return;
         }
-        Interaction.reply({content: 'The current word is: ' + LingBot.WordsManager.CurrentWord, ephemeral: true});
+        Interaction.reply({content: `The current word is: ||${LingBot.WordsManager.CurrentWord}||`, ephemeral: true});
     }
 }
