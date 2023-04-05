@@ -3,17 +3,20 @@ const WordsManager = {}
 function Emojify(Word, Input="") {
     Word = Word.toLowerCase()
     Input = Input.toLowerCase()
+    const SplitInput = Input.split("")
+    const SplitWord = Word.split("")
+
 
     var Output = ""
-    const SplitWord = Word.split("")
     var CharacterIndex = 0
-    for (const Character of SplitWord) {
+    for (const InputCharacter of SplitInput) {
         var OutputEmoji
-        const InputCharacter = Input[CharacterIndex] || ""
+        const WordCharacter = SplitWord[CharacterIndex]
+        console.log(InputCharacter, WordCharacter)
 
-        if (Character === InputCharacter) {
+        if (InputCharacter == WordCharacter) {
             OutputEmoji = LingBot.Emojis.Blocks.Green
-        } else if (Input.includes(Character)) {
+        } else if (Word.includes(InputCharacter)) {
             OutputEmoji = LingBot.Emojis.Blocks.Yellow
         } else {
             OutputEmoji = LingBot.Emojis.Blocks.Red
