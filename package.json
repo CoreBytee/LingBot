@@ -2,7 +2,9 @@
   "name": "lingbot",
   "module": "./src/index.ts",
   "type": "module",
-  "dependencies": {},
+  "dependencies": {
+    "discord.js": "^14.19.3"
+  },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@svgmoji/twemoji": "^3.2.0",
