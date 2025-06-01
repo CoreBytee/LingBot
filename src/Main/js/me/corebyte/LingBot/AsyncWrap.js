@@ -1,1 +1,0 @@
-Import("me.corebyte.LingBot")()
