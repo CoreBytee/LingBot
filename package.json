@@ -1,20 +1,20 @@
 {
-  "name": "lingbot",
-  "module": "./src/index.ts",
-  "type": "module",
-  "dependencies": {
-    "discord.js": "^14.19.3"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "1.9.4",
-    "@svgmoji/twemoji": "^3.2.0",
-    "@types/bun": "latest",
-    "svg2img": "^1.0.0-beta.2",
-    "svgmoji": "^3.2.0",
-    "twemoji": "^14.0.2"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
-  },
-  "trustedDependencies": ["@biomejs/biome"]
+	"name": "lingbot",
+	"module": "./src/index.ts",
+	"type": "module",
+	"dependencies": {
+		"discord.js": "^14.19.3"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@svgmoji/twemoji": "^3.2.0",
+		"@types/bun": "latest",
+		"svg2img": "^1.0.0-beta.2",
+		"svgmoji": "^3.2.0",
+		"twemoji": "^14.0.2"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"trustedDependencies": ["@biomejs/biome"]
 }
