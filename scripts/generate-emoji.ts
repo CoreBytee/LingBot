@@ -87,6 +87,6 @@ for (const letter in letters) {
 				value:512
 			}
 		}});
-		writeFileSync(`./emoji/${letter}-${name}.png`, imgBuffer as string)
+		writeFileSync(`./emoji/${letter}_${name}.png`, imgBuffer as string)
 	}
 }
